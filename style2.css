@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: gray;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.intro-section {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.intro-title {
+    font-size: 2.5em;
+    color: black; 
+    margin: 20px 0;
+}
+.profile-photo {
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.section-achievements {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: lightgray; /* Контрастный цвет по сравнению с первой секцией */
+    color: black; /* Цвет текста, сочетающийся с общей цветовой схемой сайта */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-container {
+    max-width: 1440px; /* Минимальная ширина секции */
+    width: 90%;
+    margin: 0 auto;
+}
+.achievement-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: row;
+}
+.achievement-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 22%;
+}
+.achievement-card img, .achievement-card video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.achievement-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+.achievement-card p {
+    font-size: 1em;
+    color: #666;
+}
+@media (max-width: 768px) {
+    .achievement-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .achievement-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
